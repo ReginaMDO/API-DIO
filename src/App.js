@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from "./components";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return(
+    <>
+      <h1>HEROFLIX</h1>
+      <ul>
+        <Item texto='Mulher-Maravilha 1984'/>
+        <Item texto='Superman o filme'/>
+        <Item texto='Loki'/>
+        <Item texto='Viúva Negra'/>
+        <Item texto='Vingadores Ultimato'/>
+        <Item texto='Como virei super-herói'/>
+        <Item texto='Liga da Justiça'/>
+        <Item texto='Homem-Aranha Longe de Casa'/>
+        <Item texto='Batman e o longo dia das Bruxas'/>
+        <Item texto='Vingadores Guerra Infinita'/>
+      </ul>
+    </>
+  )
 }
 
 export default App;
